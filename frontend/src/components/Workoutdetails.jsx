@@ -11,7 +11,7 @@ const workoutdetail = ({ workout }) => {
       return Error("Must be lgged in to see workut");
     }
     const response = await fetch(
-      "http://localhost:4000/api/workouts/" + workout._id,
+      "https://workingout.vercel.app/api/workouts/" + workout._id,
       {
         method: "DELETE",
         headers: {
