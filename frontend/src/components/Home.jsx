@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     const fetchworkout = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/workouts", {
+        const response = await fetch("https://workingout.vercel.app/api/workouts", {
           headers: {
             "content-type": "application/json",
             "Authorization": `Bearer ${user.token}`,
