@@ -8,7 +8,13 @@ const USERROUTE = require('./routes/User')
 const port = 4000
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin:["https://"],
+        methods:["GET","POST","DELETE","PATCH"],
+        credentials:true
+    }
+))
 console.log("Before middleware");
 
 console.log("after middleware");
