@@ -10,7 +10,7 @@ const port = 4000
 app.use(express.json())
 app.use(cors(
     {
-        origin:["https://"],
+        origin:["https://workingout-mb6u-n32xj7my6-prasoon-sengars-projects.vercel.app/login"],
         methods:["GET","POST","DELETE","PATCH"],
         credentials:true
     }
