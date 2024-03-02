@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pages {
+  position: absolute;
+  background-color: lightgray;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+form input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.25rem;
+  vertical-align: middle;
+  box-shadow: 0 0 0 transparent;
+  border: 1px solid #999;
+  outline: 0 none;
+  transition: box-shadow 0.5s;
+}
+
+.errorborder {
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.5em red;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+
+  25% {
+    margin-left: 0.5rem;
+  }
+
+  75% {
+    margin-left: -0.5rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+
+  25% {
+    margin-left: 0.5rem;
+  }
+
+  75% {
+    margin-left: -0.5rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  top: 0px;
+  background: rebeccapurple;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.navbar__title {
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+}
+
+.navbar__item a {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
