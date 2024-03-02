@@ -4,7 +4,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchpost = async () => {
       const token = localStorage.getItem("token");
-      const response = await fetch("/auth/posts", {
+      const response = await fetch("https://workingout.vercel.app/auth/posts", {
         method: "get",
         header: { "auth-token": token },
       });
